@@ -1,0 +1,311 @@
+/* ================= GLOBAL RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F1F1F1;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ================= FORM SECTION ================= */
+.index {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.index > div {
+  flex: 1 1 250px;
+}
+
+.index input {
+  font-size: 20px;
+  width: 60%;
+}
+
+.index b {
+  font-size: 24px;
+  color: #484747;
+}
+
+.btnn {
+  background-color: #7DB500;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+}
+
+.btnn:hover {
+  background-color: rgb(22, 22, 40);
+  transition: 0.5s;
+}
+
+/* ================= RESULT SECTION ================= */
+.show {
+  background-color: #F4FCF0;
+  display: flex;
+  gap: 3rem;
+  padding: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.show > div {
+  flex: 1 1 300px;
+}
+
+.heading {
+  margin-bottom: 10px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.navbar-nav .nav-link {
+  color: #333 !important;
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #da70aa !important;
+  background-color: rgba(124, 179, 66, 0.1);
+  border-radius: 6px;
+}
+
+/* ================= ABOUT PAGE ================= */
+
+.about img {
+  height: 350px;
+  max-width: 400px;
+}
+.about {
+  display: flex;
+  /* flex-wrap: wrap;*/
+  padding: 1rem; 
+  gap: 10rem;
+}
+
+.about h1,
+.about p {
+  margin: 1rem;
+}
+
+.about p {
+  font-size: 18px;
+  color: #353333;
+}
+/* ================= FOOTER ================= */
+.first {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(26, 26, 65);
+  color: white;
+  padding: 10px;
+}
+.head{
+   background-color:whitesmoke;
+    /* margin: 20px 20px;  */
+    border: 1px solid white; 
+    border-radius: 2px; 
+  }
+  .like{
+    margin-left: -350px;
+    margin-top: 5px;
+  }
+  .dislike{
+    margin-left: -350px;
+    margin-top: 5px;
+  }
+  .like:hover{
+    cursor: pointer;
+    color: red;
+    transition: 1s;
+  }
+  .dislike:hover{
+    cursor: pointer;
+    color: grey;
+    transition: 1s;
+  }
+
+.first p {
+  margin: 5px;
+}
+
+.contact {
+  color: white;
+  text-decoration: none;
+}
+
+.contact:hover {
+  text-decoration: underline;
+}
+
+.second {
+  margin:  30px 100px;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.second div {
+  flex: 1 1 200px;
+}
+
+.image {
+  /* width: 100px; */
+  height: 150px;
+  margin-left: -60px;
+}
+
+.varticle-line {
+  margin-left: 30px;
+  width: 1px;
+  position: relative;
+  align-self: stretch;
+  height: 250px;
+}
+
+.varticle-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  background-color: rgba(0,0,0,0.3);
+  gap: 30px;
+}
+
+.links {
+  margin-left: -70px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.services{
+  
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.links a,
+.services a {
+  text-decoration: none;
+}
+
+.links a:hover,
+.services a:hover {
+  text-decoration: underline;
+}
+
+.icons {
+  gap: 10px;
+  position: relative;
+  z-index: 10;
+  
+}
+
+.icons a {
+  width: 20px;
+  height: 20px;
+  background: black;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.time {
+  justify-content: center;
+  text-align: center;
+  margin-top: -3rem;
+  margin-left: -12rem;
+}
+
+.img {
+  width: 150px;
+}
+ .time p {
+    margin-left:  5rem;
+ }
+
+/* ================= EXTRA ================= */
+.start {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: -40rem;
+  font-size: 18px;
+  text-decoration: none;
+
+  
+}
+
+.start:hover {
+  text-decoration: underline;
+ 
+}
+.bt{
+    background-color: #7DB500;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .index {
+    flex-direction: column;
+  }
+
+  .show {
+    flex-direction: column;
+  }
+
+  .btnn {
+    width: 100%;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .about h1 {
+    font-size: 24px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+}

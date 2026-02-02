@@ -1,0 +1,71 @@
+<% layout('/layouts/boilerplate') -%>
+
+<div>
+    <form action="/counters" method="POST">
+        <div class="index">
+     <div>
+       <label><b>Start Date</b></label>
+       <br>
+       <input type="date" name="startDate" required>
+     </div>
+     <div>
+        <label><b>End Date</b></label>
+        <br>
+        <input type="date" name="endDate" required>
+     </div>
+     </div>
+    <br>
+    <button type="submit" class="btnn">Calculate Duration</button>
+</form>
+</div>
+
+
+<hr>
+
+<% if (typeof counter !== "undefined") { %>
+    
+  <div class= "show">
+    <div>
+       <p class="heading">From and including: <%= counter.startDate.toLocaleDateString("en-in" , {
+            weekday: "long" ,
+            month: "short",
+            day: "2-digit",
+            year:"numeric"
+        })  %> </p> 
+        
+        <p>To, but not including: <%= counter.endDate.toLocaleDateString("en-In" , {
+            weekday: "short" ,
+            month: "short",
+            day: "2-digit",
+            year:"numeric"
+        }) %></p>
+        
+        <h4>Result: <%= counter.days %>days</h4>
+
+        <p>It is <%= counter.days %> days from the start date to the end date , but not including the and date</p>
+
+      <p>
+       Or <%= counter.years %> years,
+       <%= counter.months %> months,
+       <%= counter.days %> days excluding the end date.
+     </p>
+
+        <p>or <%= counter.years*12 + counter.months %>months,
+        <%= counter.days % 30 %> days excluding the end date.
+      </p>
+      </div>
+        <div >
+        <h3>Alternative time units</h3>
+        <p>• <%= counter.days %> days can be coverted to one of these units:</p>
+        <p>• <%= counter.seconds.toLocaleString() %> seconds</p>
+        <p>• <%= counter.minutes.toLocaleString() %> minutes</p>
+        <p>• <%= counter.hours.toLocaleString() %> hours </p>
+        <p>• <%= counter.hours.toLocaleString() %> hours</p>
+        <p>• <%= counter.days %> days</p>
+        <p>• <%= counter.weeks %> weeks</p>
+            <a href="/counters" class="start">Start Again>></a>
+     </div>
+  
+ </div>
+   
+<% } %>
